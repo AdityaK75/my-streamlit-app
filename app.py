@@ -4,7 +4,7 @@ import pickle
 from keras.models import load_model
 
 # Load the trained LSTM model and the scaler
-model = load_model("best_model.h5", compile=False)
+model = load_model("lstm_model.h5", compile=False)
 
 with open("scaler.pkl", "rb") as f:
     scaler = pickle.load(f)
